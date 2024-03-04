@@ -1,0 +1,185 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.getTheclassMoment{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.current-class{
+    color: green;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.know-next-class span b:first-child{
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.know-previous-class span b:first-child{
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.button-center{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.width800{
+    width: 800px;
+    box-sizing: border-box;
+}
+.button-center button {
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.button-center button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#sundayClass{
+    display: flex;
+    justify-content:space-around;
+}
+#sundayClass div {
+}
+select{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 2px;
+    border-radius: 10px;
+    background: linear-gradient(red,black,yellow );
+    color: white;
+}
+select option {
+    background-color: black;
+    transition: 0.5s;
+}
+
+#subInfo{
+    margin-top: 30px;
+}
+.CEP{
+    display: grid;
+    place-items:center;
+}
+.CEP h1 {
+    margin: 0;
+}
+.CEP table {
+    border: 3px solid rgb(89, 95, 6);
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.CEP table td{
+    font-size: 20px;
+    border-top: 2px solid black;
+}
+h3 span {
+    padding-left: 15px;
+}
+#teacherInfo {
+    display: grid;
+    place-items: center;
+}
+#teacherInfo h1, h2{
+    margin: 5px;
+    text-align: center;
+}
+
+
+header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.routine-titles {
+    text-align: center;
+    font-size: 18px;
+}
+.routine-statistics table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.routine-statistics table th,  td {
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0px 31px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* table section starts from here  */
+
+.table-section{
+    width: 90%;
+    margin: 0px auto;
+}
+.table-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.table-section table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.table-section table tr td h2{
+    font-size: 18px;
+}
+
+/* detailes routine table css starts here  */
+hr{
+    margin: 100px 0;
+}
+.details-routine{
+    width: 90%;
+    margin: 0px auto;
+}
+.details-routine table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+/* footer part starts from here  */
+
+footer {
+    width: 90%;
+    margin: 35px auto;
+}
+header, .table-section, .details-routine, footer{
+    
+}
+@media screen and (max-width: 550px) {
+
+    #sundayClass{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    #sundayClass div{
+        padding: 0px 10px !important;
+    }
+    header{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    .sunday-class-item {
+        width: 500px; /* Set fixed width to 500px */
+        display: inline-block; /* Change display property to inline-block */
+    }
+}

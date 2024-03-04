@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My class routine app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="button-center">
+        <button id="btn">Get Current Class</button> <br>
+    </div>
+
+    <div class="getTheclassMoment">
+        <div class="know-previous-class"> </div>
+        <div id="get-current-class"> </div>
+        <div class="know-next-class"> </div>
+    </div>
+
+    <div class="button-center">
+        <button id="dayBtn" for="selectDay">Get Classlists by a specific day</button>
+        <select name="dayBtn" id="selectDay">
+            <option value="value-0">Select Days</option>
+            <option value="value-1">Sunday</option>
+            <option value="value-2">Monday</option>
+            <option value="value-3">Tuesday</option>
+            <option value="value-4">Wednesday</option>
+            <option value="value-5">Thursday</option>
+        </select>
+    </div>
+    <div id="sundayClass">
+    </div>
+
+    <div class="button-center">
+        <button id="subBtn">Get Subject's information</button>
+        <select name="selectSub" id="selectSub">
+            <option value="value-0">Select Subject</option>
+            <option value="value-1">Civil Engineering Project</option>
+            <option value="value-2">Sanitary Engineering</option>
+            <option value="value-3">Transportation Engineering</option>
+            <option value="value-4">Design of Structure 2</option>
+            <option value="value-5">Water Resouce Engineering</option>
+            <option value="value-6">CM&D</option>
+            <option value="value-7">Innovation & Entreprenurship</option>
+        </select>
+    </div>
+    <div id="subInfo"></div>
+
+    <div class="button-center">
+        <button id="teacherBtn">Get Teacher's Information</button>
+        <select name="selectTeacher" id="selectTeacher">
+            <option value="value-0">Select Teacher's Name</option>
+            <option value="value-1">Mr Ashim Dhar sir</option>
+            <option value="value-2">Tarif Ullah Sir</option>
+            <option value="value-3">Kohinur Akhter</option>
+            <option value="value-4">Shahina</option>
+            <option value="value-5">Sumaiya Akhter Nishi</option>
+            <option value="value-6">Mr Zrs (RS)</option>
+        </select>
+    </div>
+    <div id="teacherInfo"></div>
+
+
+    <hr>
+    <header>
+        <div class="routine-titles">
+            <h2>Cumilla Polytechnic Institute, Kotbari, Cumilla</h2>
+            <h3>Class Routine 7th semeseter</h3>
+            <h3>(Class start: 14-01-2024)</h3>
+            <h3>Department of Civil Engineering</h3>
+        </div>
+        <div class="routine-statistics">
+            <table>
+                <th colspan="3"><h3>Class Load</h3></th>
+                <tr>
+                    <td><h3>Theory</h3></td>
+                    <td><h3>Practical</h3></td>
+                    <td><h3>Total</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>12</h3></td>
+                    <td><h3>21</h3></td>
+                    <td><h3>33</h3></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <section class="table-section">
+        <div class="table-info">
+            <h2>Semester: 7th</h2>
+            <h2>Shift: 1st</h2>
+            <h2>Group: B</h2>
+        </div>
+
+        <table>
+            <tr>
+                <td><h2>Period</h2></td>
+                <td><h2>1</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>4</h2></td>
+                <td><h2>5</h2></td>
+                <td><h2>6</h2></td>
+                <td><h2>7</h2></td>
+            </tr>
+            <tr>
+                <td><h2>Time and Day</h2></td>
+                <td><h2>8 - 8:45</h2></td>
+                <td><h2>8:45 - 9:30</h2></td>
+                <td><h2>9:30 - 10:15</h2></td>
+                <td><h2>10:15 - 11</h2></td>
+                <td><h2>11 - 11:45</h2></td>
+                <td><h2>11:45 - 12:30</h2></td>
+                <td><h2>12:30 - 1:15</h2></td>
+            </tr>
+            <tr>
+                <td><h2>Sunday</h2></td>
+                <td colspan="3"><h2>66471 <br> AD <br>Mason Shop </h2></td>
+                
+                <td><h2>66474 <br> AD <br>311 </h2></td>
+                <td><h2>66472 <br> TU <br>311</h2></td>
+                <td><h2>X</h2></td>
+                <td><h2>X</h2></td>
+            </tr>
+            <tr>
+                <td><h2>Monday</h2></td>
+                <td colspan="3"><h2>66473 <br> KA <br>Geotechnical Lab</h2></td>
+                <td><h2>66474 <br> AD <br>311 </h2></td>
+                <td><h2>66475 <br> MS <br>311 </h2></td>
+                <td><h2>66475 <br> MS <br>311 </h2></td>
+                <td><h2>68873<br>SAN <br>311 </h2></td>
+            </tr>
+            <tr>
+                <td><h2>Tuesday</h2></td>
+                <td><h2>65853 <br> Z RS <br>311 </h2></td>
+                <td><h2>65853 <br> Z RS <br>311 </h2></td>
+                <td><h2>68873 <br> SAN <br>311 </h2></td>
+                <td><h2>66472 <br> TU <br>311 </h2></td>
+                <td colspan="3"><h2>66475 <br> MS <br>Plumbing Shop </h2></td>
+            </tr>
+            <tr>
+                <td><h2>Wednesday</h2></td>
+                <td colspan="3"><h2>68873 <br> SAN <br>Mason Shop </h2></td>
+                <td><h2>66473 <br> KA <br>Mason Shop </h2></td>
+                <td colspan="3"><h2>66471 <br> AD <br>Mason Shop </h2></td>
+            </tr>
+            <tr>
+                <td><h2>Thursday</h2></td>
+                <td colspan="3"><h2>66474 <br> AD <br>310</h2></td>
+                <td><h2>66473 <br> KA <br>311 </h2></td>
+                <td colspan="3"><h2>66472 <br> TU <br>Plumbing Shop </h2></td>
+            </tr>
+        </table>
+   </section>
+
+   <section class="details-routine">
+
+        <hr>
+
+        <table>
+            <tr>
+                <th><h2>S.L</h2></th>
+                <th><h2>Subject Code </h2></th>
+                <th><h2>Subject Name </h2></th>
+                <th><h2>T </h2></th>
+                <th><h2>P</h2></th>
+                <th><h2>C</h2></th>
+                <th><h2>Teacher Name</h2></th>
+            </tr>
+            <tr>
+                <td><h2>1</h2></td>
+                <td><h2>66471</h2></td>
+                <td><h2>Civil Engineering Project</h2></td>
+                <td><h2>0</h2></td>
+                <td><h2>6</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>Mr. Ashim Dhar (AD)</h2></td>
+            </tr>
+            <tr>
+                <td><h2>2</h2></td>
+                <td><h2>66472</h2></td>
+                <td><h2>Sanitary Engineering</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>Mr. Tarif Ullah (TU)</h2></td>
+            </tr>
+            <tr>
+                <td><h2>3</h2></td>
+                <td><h2>66473</h2></td>
+                <td><h2>Transportation Engineering</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>Mrs. Kohinur Akter (KA) </h2></td>
+            </tr>
+            <tr>
+                <td><h2>4</h2></td>
+                <td><h2>66474</h2></td>
+                <td><h2>Design of Structure</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>Mr. Ashim Dhar (AD)</h2></td>
+            </tr>
+            <tr>
+                <td><h2>5</h2></td>
+                <td><h2>66475</h2></td>
+                <td><h2>Water Resource Engineering</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>Mrs. Shahina Akter (MS)</h2></td>
+            </tr>
+            <tr>
+                <td><h2>6</h2></td>
+                <td><h2>68853</h2></td>
+                <td><h2>Construction Management and Documentation</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>3</h2></td>
+                <td><h2>Mrs. Sumaiya Akter Nishi (SAN)</h2></td>
+            </tr>
+            <tr>
+                <td><h2>7</h2></td>
+                <td><h2>65853</h2></td>
+                <td><h2>Innovation and Entrepreneurship</h2></td>
+                <td><h2>0</h2></td>
+                <td><h2>6</h2></td>
+                <td><h2>2</h2></td>
+                <td><h2>MRs. Z (RS)</h2></td>
+            </tr>
+        </table>        
+   </section>
+
+   <footer>
+    <p>N.B: No change will be acceptable without permission of the principal. If any problems found in the routine, please inform it to the chairman of the routine committee within next five working days.</p>
+   </footer>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
