@@ -613,8 +613,12 @@ btn.addEventListener('click', () =>{
         }
     }
     else {
-        console.log('no class available today')
-    }
+        const currentClassInfo = document.createElement('div');
+        currentClassInfo.innerHTML =  `
+        <span class="current-class"> No Class available for today </span> `;
+        getCurrentClass.innerHTML = '';
+        getCurrentClass.appendChild(currentClassInfo); 
+        }
 });
 
 const class1 = document.createElement('div');
