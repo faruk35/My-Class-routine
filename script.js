@@ -27,6 +27,9 @@ const sundayClass4 = document.getElementById('sundayClass4');
 const teacherBtn = document.getElementById("teacherBtn");
 const selectTeacher = document.getElementById("selectTeacher");
 const teacherInfo = document.getElementById("teacherInfo");
+const tableOnOff = document.getElementById('tableOnOff');
+const tableSection = document.getElementById("tableSection");
+const detailesRoutine = document.getElementById('detailesRoutine');
 
 const classNo1 = () => {
     const currentClassInfo = document.createElement('div');
@@ -995,5 +998,17 @@ selectTeacher.addEventListener('change', function (event){
             <h2>Busy Days : Tuesday</h2>
          </div>`;
         teacherInfo.appendChild(info);
+    }
+})
+
+tableOnOff.addEventListener('change', function(event){
+    const selectedOption = event.target.value;
+    if (selectedOption === 'value-1') {
+        tableSection.style.display='block';
+        detailesRoutine.style.display='block';
+    }
+    if (selectedOption === 'value-2') {
+        tableSection.style.display='none';
+        detailesRoutine.style.display='none';
     }
 })
