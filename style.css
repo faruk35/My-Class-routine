@@ -1,3 +1,9 @@
+#tableSection{
+    display: none;
+}
+#detailesRoutine{
+    display: none;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
