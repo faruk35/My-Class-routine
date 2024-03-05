@@ -80,6 +80,7 @@ select option {
 }
 .CEP h1 {
     margin: 0;
+    text-align: center;
 }
 .CEP table {
     border: 3px solid rgb(89, 95, 6);
