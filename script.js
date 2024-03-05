@@ -499,6 +499,13 @@ const preClassNo17 = () => {
     knowPreviousClass.innerHTML = '';
     knowPreviousClass.appendChild(previousClassInfo);
 };
+const noClass = () => {
+    const currentClassInfo = document.createElement('div');
+    currentClassInfo.innerHTML =  `
+    <span class="current-class"> No Class available for today </span> `;
+    getCurrentClass.innerHTML = '';
+    getCurrentClass.appendChild(currentClassInfo); 
+};
 
 btn.addEventListener('click', () =>{
     // SUNDAY JS FILE STARTS FROM HERE 
@@ -517,6 +524,8 @@ btn.addEventListener('click', () =>{
         else if (currentHours == 11 && currentMinutes >= 0 && currentMinutes <= 45){
             classNo3();
             preClassNo3();
+        }else {
+            noClass();
         }
     }
 
@@ -544,6 +553,8 @@ btn.addEventListener('click', () =>{
                  ( currentHours == 13 && currentMinutes >= 0 && currentMinutes <= 15 )){
                     classNo7();
                     preClassNo7();
+        }else{
+            noClass();
         }
     }
     // TUESDAY JS FILE STARTS FROM HERE 
@@ -569,13 +580,15 @@ btn.addEventListener('click', () =>{
                 (currentHours == 13 && currentMinutes >= 0 && currentMinutes <= 15 )) {
                     classNo11();
                     preClassNo11();
+        }else {
+            noClass();
         }
     }
     // Wednesday js file starts from here 
 
     if ( currentDay == 3 ) {
-        if ((currentHours == 8 && currentMinutes >= 0 && currentMinutes <= 59) 
-           ( currentHours == 9 && currentMinutes >= 0 && currentMinutes <= 59 )
+        if ((currentHours == 8 && currentMinutes >= 0 && currentMinutes <= 59) || 
+           ( currentHours == 9 && currentMinutes >= 0 && currentMinutes <= 59 )|| 
            ( currentHours == 10 && currentMinutes >= 0 && currentMinutes <= 15 ))  {
              classNo12();
             nextClassNo12();
@@ -585,17 +598,19 @@ btn.addEventListener('click', () =>{
             preClassNo13();
             nextClassNo13();
         }
-        else if (( currentHours == 11  && currentMinutes >= 0 && currentMinutes <= 59) 
-                ( currentHours == 12  && currentMinutes >= 0 && currentMinutes <= 59)
+        else if (( currentHours == 11  && currentMinutes >= 0 && currentMinutes <= 59) || 
+                ( currentHours == 12  && currentMinutes >= 0 && currentMinutes <= 59)|| 
                 ( currentHours == 13  && currentMinutes >= 0 && currentMinutes <= 15)){
                     classNo14();
                     preClassNo14();
+        }else{
+            noClass();
         }
     }
     // Thursday js file starts from here 
     if ( currentDay == 4 ) {
-        if ((currentHours == 8 && currentMinutes >= 0 && currentMinutes <= 59) 
-            ( currentHours == 9 && currentMinutes >= 0 && currentMinutes <= 59 )
+        if ((currentHours == 8 && currentMinutes >= 0 && currentMinutes <= 59) || 
+            ( currentHours == 9 && currentMinutes >= 0 && currentMinutes <= 59 )|| 
             ( currentHours == 10 && currentMinutes >= 0 && currentMinutes <= 15 )) {
             classNo15();
             nextClassNo15();
@@ -605,20 +620,15 @@ btn.addEventListener('click', () =>{
             preClassNo16();
             nextClassNo16();
         }
-        else if (( currentHours == 11  && currentMinutes >= 0 && currentMinutes <= 59) 
-                 ( currentHours == 12  && currentMinutes >= 0 && currentMinutes <= 59)
+        else if (( currentHours == 11  && currentMinutes >= 0 && currentMinutes <= 59) || 
+                 ( currentHours == 12  && currentMinutes >= 0 && currentMinutes <= 59) || 
                  ( currentHours == 13  && currentMinutes >= 0 && currentMinutes <= 15)) {
             classNo17();
             preClassNo17();
+        }else{
+            noClass();
         }
     }
-    else {
-        const currentClassInfo = document.createElement('div');
-        currentClassInfo.innerHTML =  `
-        <span class="current-class"> No Class available for today </span> `;
-        getCurrentClass.innerHTML = '';
-        getCurrentClass.appendChild(currentClassInfo); 
-        }
 });
 
 const class1 = document.createElement('div');
