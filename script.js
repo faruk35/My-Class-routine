@@ -175,7 +175,7 @@ const classNo6 = () => {
     <span>Shahina Akther</span> <br>
     <span>Water Resource Engineering </span> <br>
     <span>Place: 311</span> <br>
-    <span>Today : Sunday </span> <br>
+    <span>Today : Monday </span> <br>
     <span>From 11:00 AM to 12:30 AM</span>`;
     getCurrentClass.innerHTML = '';
     getCurrentClass.appendChild(currentClassInfo);
@@ -185,7 +185,7 @@ const preClassNo6 = () => {
     previousClassInfo.innerHTML =  `
     <span><b>Previous Class</b></span> <br>
     <span>Teacher: Ashim Dhar Sir</span> <br>
-    <span>Civil Engineering Project</span> <br>
+    <span>Design of Structure</span> <br>
     <span>Place: 311</span> <br>
     <span> From 10:15 AM to 11:00 AM`;
     knowPreviousClass.innerHTML = '';
@@ -209,7 +209,7 @@ const classNo7 = () => {
     <span>Sumaiya Akhter Nishi</span> <br>
     <span>Construction Management and Documentation </span> <br>
     <span>Place: 311</span> <br>
-    <span>Today : Sunday </span> <br>
+    <span>Today : Monday </span> <br>
     <span>From 12:30 AM to 1:15 PM </span>`;
     getCurrentClass.innerHTML = '';
     getCurrentClass.appendChild(currentClassInfo);
@@ -232,7 +232,7 @@ const classNo8 = () => {
     <span> MR ZRs </span> <br>
     <span> Innovation and Entrepreneurship </span> <br>
     <span>Place: 311</span> <br>
-    <span>Today : Tuessday </span> <br>
+    <span>Today : Tuesday </span> <br>
     <span>From 8:00 AM to 9:30 AM </span>`;
     getCurrentClass.innerHTML = '';
     getCurrentClass.appendChild(currentClassInfo);
@@ -289,7 +289,7 @@ const classNo10 = () => {
     <span> Tarif Ullah </span> <br>
     <span>Sanitary Engineering </span> <br>
     <span>Place: 311</span> <br>
-    <span>Today : Tuessday </span> <br>
+    <span>Today : Tuesday </span> <br>
     <span>From 10:15 AM to 11:00 AM </span>`;
     getCurrentClass.innerHTML = '';
     getCurrentClass.appendChild(currentClassInfo);
@@ -436,9 +436,9 @@ const nextClassNo15 = () => {
     nextClassInfo.innerHTML =  `
     <span><b> Next Class </b> </span> <br>
     <span> Kohinur Akhtar </span> <br>
-    <span> Transportation Engineering </span> <br>
+    <span> Transportation Engineering 2 </span> <br>
     <span>Place: 311 </span> <br>
-    <span>From 11:00 AM to 01:15 PM </span>`;
+    <span>From 10:15 AM to 11:00 AM </span>`;
     knowNextClass.innerHTML = '';
     knowNextClass.appendChild(nextClassInfo);
 };
@@ -447,7 +447,7 @@ const classNo16 = () => {
     currentClassInfo.innerHTML =  `
     <span class="current-class"> Current Class </span> <br>
     <span> Kohinur Akhtar </span> <br>
-    <span> Transportation Engineering </span> <br>
+    <span> Transportation Engineering 2 </span> <br>
     <span>Place : 311 </span> <br>
     <span>Today : Thursday </span> <br>
     <span>From 10:15 AM to 11:00 AM </span>`;
@@ -502,7 +502,7 @@ const preClassNo17 = () => {
 const noClass = () => {
     const currentClassInfo = document.createElement('div');
     currentClassInfo.innerHTML =  `
-    <span class="current-class"> No Class available for today </span> `;
+    <span class="current-class" style ="text-align: center;"> No class available right now </span> `;
     getCurrentClass.innerHTML = '';
     getCurrentClass.appendChild(currentClassInfo); 
 };
@@ -681,14 +681,12 @@ selectDay.addEventListener('change', function(event){
         <span>From 11:00 AM to 11:45 AM</span>`;
         sundayClass.appendChild(class3);
 
-  
-
     } else if (selectedOption === "value-2") {
 
         class4.innerHTML = `
         <span class="current-class"> 4th Class </span> <br>
         <span>Teacher: Kohinur Akhtar</span> <br>
-        <span>Civil Engineering Project</span> <br>
+        <span>Transportation Engineering 2 </span> <br>
         <span>Place: Geotechnical Lab</span> <br>
         <span>From 8:00 AM to 10:15 AM </span>`;
         sundayClass.appendChild(class4);
@@ -706,7 +704,7 @@ selectDay.addEventListener('change', function(event){
         <span>Shahina Akther</span> <br>
         <span>Water Resource Engineering </span> <br>
         <span>Place: 311</span> <br>
-        <span>From 11:00 AM to 12:30 AM</span>`;
+        <span>From 11:00 AM to 12:30 PM </span>`;
         sundayClass.appendChild(class6);
 
         class7.innerHTML = `
@@ -714,7 +712,7 @@ selectDay.addEventListener('change', function(event){
         <span>Sumaiya Akhter Nishi</span> <br>
         <span>Construction Management and Documentation </span> <br>
         <span>Place: 311</span> <br>
-        <span>From 12:30 AM to 1:15 PM </span>`;
+        <span>From 12:30 PM to 1:15 PM </span>`;
         sundayClass.appendChild(class7);
 
 
@@ -749,7 +747,7 @@ selectDay.addEventListener('change', function(event){
         <span> Shahina Akhter </span> <br>
         <span>Water Resource Engineering</span> <br>
         <span>Plumbing Shop</span> <br>
-        <span>From 11:00 AM to 01:15 AM </span>`;
+        <span>From 11:00 AM to 01:15 PM </span>`;
         sundayClass.appendChild(class11);
 
    
@@ -831,7 +829,7 @@ selectSub.addEventListener('change', function(event){
                     <td>2</td>
                 </tr>
             </table>
-            <h2>Total Days: <span>Sunday, Wednesday</span> </h2>
+            <h2>Total Days: <span style='margin-left:18px;'> Sunday, Wednesday</span> </h2>
         </div>`;
         subInfo.appendChild(CEP);
 
@@ -852,7 +850,7 @@ selectSub.addEventListener('change', function(event){
                     <td>3</td>
                 </tr>
             </table>
-            <h2>Total Days: <span>Sunday, Tuesday. Thursday</span> </h2>
+            <h2>Total Days: <span style='margin-left:18px;'> Sunday, Tuesday. Thursday</span> </h2>
         </div>`;
         subInfo.appendChild(CEP);
     }else if (selectedOption == 'value-3') {
@@ -872,14 +870,14 @@ selectSub.addEventListener('change', function(event){
                     <td>3</td>
                 </tr>
             </table>
-            <h2>Total Days: <span>Monday and Wednesday</span> </h2>
+            <h2>Total Days: <span style='margin-left:18px;'> Monday, Wednesday and Thursday </span> </h2>
         </div>`;
         subInfo.appendChild(CEP);
     }else if (selectedOption == 'value-4') {
         CEP.innerHTML = ` 
         <div class="CEP">
-            <h1>Design of Structure</h1>
-            <h2>Mr Ashim Dhar </h2>
+            <h1>Design of Structure 2</h1>
+            <h2>Mr Ashim Dhar Sir</h2>
             <table>
                 <tr>
                     <th>Theory</th>
@@ -892,7 +890,7 @@ selectSub.addEventListener('change', function(event){
                     <td>3</td>
                 </tr>
             </table>
-            <h2>Total Days: <span>Sunday, Monday, Tuesday </span> </h2>
+            <h2>Total Days: <span style='margin-left:18px;'> Sunday, Monday, Thursday </span> </h2>
         </div>`;
         subInfo.appendChild(CEP);
     }else if (selectedOption == 'value-5') {
@@ -912,7 +910,7 @@ selectSub.addEventListener('change', function(event){
                     <td>3</td>
                 </tr>
             </table>
-            <h2>Total Days: <span>Monday, Tuesday </span> </h2>
+            <h2>Total Days: <span style='margin-left:18px;'> Monday and Tuesday </span> </h2>
         </div>`;
         subInfo.appendChild(CEP);
     }else if (selectedOption == 'value-6') {
@@ -932,7 +930,7 @@ selectSub.addEventListener('change', function(event){
                     <td>3</td>
                 </tr>
             </table>
-            <h2>Total Days: <span>Monday, Tuesday, Wednesday </span> </h2>
+            <h2>Total Days: <span style='margin-left:18px;'> Monday, Tuesday, Wednesday </span> </h2>
         </div>`;
         subInfo.appendChild(CEP);
     }else if (selectedOption == 'value-7') {
@@ -967,16 +965,16 @@ selectTeacher.addEventListener('change', function (event){
         info.innerHTML = `
         <div id="teacherInfo">
             <h1>Mr Ashim Dhar Sir</h1>
-            <h2>Subjects: <span>Civil Engineering Project ,</span> <span>Design of Structure 2</span></h2>
-            <h2>Busy Days : Sunday, Monday, Wednesday, Thursday</h2>
+            <h2>Subjects: <span style='margin-left:18px;'>Civil Engineering Project , Design of Structure 2</span></h2>
+            <h2>Busy Days : <span style='margin-left:18px;'> Sunday, Monday, Wednesday, Thursday </span> </h2>
          </div>`;
         teacherInfo.appendChild(info);
     }else if (selectedOption === 'value-2') {
         info.innerHTML = `
         <div id="teacherInfo">
             <h1>Tarif Ullah Sir</h1>
-            <h2>Subjects: <span>Sanitary Engineering </span></h2>
-            <h2>Busy Days : Sunday, Tuesday, Thursday</h2>
+            <h2>Subjects: <span style='margin-left:18px;'> Sanitary Engineering </span> </h2>
+            <h2>Busy Days : <span style='margin-left:18px;'>Sunday, Tuesday, Thursday </span> </h2>
          </div>`;
         teacherInfo.appendChild(info);
 
@@ -984,32 +982,32 @@ selectTeacher.addEventListener('change', function (event){
         info.innerHTML = `
         <div id="teacherInfo">
             <h1>Kohinur Akhtar</h1>
-            <h2>Subjects: <span>Transportation Engineering 2 </span></h2>
-            <h2>Busy Days : Monday, Wednesday, Thursday</h2>
+            <h2>Subjects: <span style='margin-left:18px;'> Transportation Engineering 2 </span> </h2>
+            <h2>Busy Days : <span style='margin-left:18px;'> Monday, Wednesday, Thursday </span> </h2>
          </div>`;
         teacherInfo.appendChild(info);
     }else if (selectedOption === 'value-4') {
         info.innerHTML = `
         <div id="teacherInfo">
             <h1>Shahina</h1>
-            <h2>Subjects: <span>Water Resource Engineering </span></h2>
-            <h2>Busy Days : Monday, Tuesday</h2>
+            <h2>Subjects: <span style='margin-left:18px;'>Water Resource Engineering </span></h2>
+            <h2>Busy Days : <span style='margin-left:18px;'> Monday, Tuesday </span></h2>
          </div>`;
         teacherInfo.appendChild(info);
     }else if (selectedOption === 'value-5') {
         info.innerHTML = `
         <div id="teacherInfo">
             <h1>Sumaiya Nishi</h1>
-            <h2>Subjects: <span>Construction Management and Documentation </span></h2>
-            <h2>Busy Days : Monday, Tuesday, Wednesday</h2>
+            <h2>Subjects: <span style='margin-left:18px;'>Construction Management and Documentation </span></h2>
+            <h2>Busy Days : <span style='margin-left:18px;'> Monday, Tuesday, Wednesday</span></h2>
          </div>`;
         teacherInfo.appendChild(info);
     }else if (selectedOption === 'value-6') {
         info.innerHTML = `
         <div id="teacherInfo">
             <h1>Mr Zrs</h1>
-            <h2>Subjects: <span>Innovation and Entrepreneurship</span></h2>
-            <h2>Busy Days : Tuesday</h2>
+            <h2>Subjects: <span style='margin-left:18px;'> Innovation and Entrepreneurship</span></h2>
+            <h2>Busy Days : <span style='margin-left:18px;'> Tuesday </span> </h2>
          </div>`;
         teacherInfo.appendChild(info);
     }
